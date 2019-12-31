@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Psychological Test</string>
+
+    <string name="start">Start</string>
+
+    <!--分類for ListView-->
+    <string-array name="options">
+        <item>感動</item>
+        <item>傷心</item>
+        <item>痛</item>
+        <item>生氣</item>
+        <item>擔心</item>
+    </string-array>
+
+    <!--封面文字-->
+    <string name="test_describe">題目很簡單\n但就是能把你看穿</string>
+
+    <!--規則說明-->
+    <string name="game_detail">將感動、傷心、痛(肉體上)、生氣、擔心依照順序排列\n１為最容易 ５為最不容易</string>
+
+    <!--分類-->
+    <string name="classifier">感動,傷心,痛,生氣,擔心</string>
+
+    <!--Which-->
+    <string name="which">以下感覺何者最容易發生?</string>
+
+</resources>
