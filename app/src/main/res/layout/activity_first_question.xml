@@ -7,23 +7,24 @@
     tools:context=".FirstQuestion">
 
     <TextView
-        android:id="@+id/first_page"
+        android:id="@+id/first_Ques"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="第一題"
         android:textSize="40dp" />
 
     <TextView
-        android:id="@+id/first_page_Question"
+        android:id="@+id/first_Ques_Des"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/first_page"
+        android:layout_below="@id/first_Ques"
         android:text="@string/which"
         android:textSize="30dp" />
 
     <ListView
+        android:id="@+id/ans_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/first_page_Question"
-        android:entries="@array/options"/>
+        android:layout_below="@id/first_Ques_Des"
+        android:entries="@array/options" />
 </RelativeLayout>

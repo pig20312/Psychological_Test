@@ -34,7 +34,7 @@
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:onClick="to_first_question"
+        android:onClick="onClickBtn"
         android:text="@string/start" />
 
     <TextView
