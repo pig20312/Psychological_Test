@@ -63,7 +63,6 @@ public class FirstQuestion extends AppCompatActivity {
                 if(layer_index == 5)
                     layer_index = 0;
 
-//                intent.putExtra("leaveType", ansType.toArray(new String[0]));
                 startActivity(intent);
             }
         };

@@ -32,8 +32,6 @@ public class FirstAnswer extends AppCompatActivity {
         Intent intent = new Intent(FirstAnswer.this, FirstQuestion.class);
         if(layer == 4) {
             intent = new Intent(FirstAnswer.this, MainActivity.class);
-//            Intent gggg = new Intent(FirstAnswer.this, MainActivity.class);
-//            startActivity(gggg);
         }
         startActivity(intent);
     }
