@@ -16,7 +16,7 @@
     <string name="test_describe">題目很簡單\n但就是能把你看穿</string>
 
     <!--規則說明-->
-    <string name="game_detail">將感動、傷心、痛(肉體上)、生氣、擔心依照順序排列\n１為最容易 ５為最不容易</string>
+    <string name="game_detail">將感動、傷心、痛(肉體上)、生氣、擔心依照順序排列</string>
 
     <!--分類-->
     <string name="classifier">感動,傷心,痛,生氣,擔心</string>

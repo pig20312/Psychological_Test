@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class FirstQuestion extends AppCompatActivity {
 
-    static int layer_index = 1;
+    static int layer_index = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,15 +25,28 @@ public class FirstQuestion extends AppCompatActivity {
         TextView title = findViewById(R.id.first_Ques);
         TextView des = findViewById(R.id.first_Ques_Des);
 
-        Switch(layer_index){
+        switch(layer_index){
+            case 0:
+                title.setText("第一排序");
+                des.setText("你最常因為以下何者原因哭泣");
+                break;
             case 1:
-                title.setText("第一題");
-                des.setText("fxck");
-            default:
-                title.setText("第一題");
-                des.setText("fxck");
+                title.setText("第二排序");
+                des.setText("你常因為以下何者原因哭泣");
+                break;
+            case 2:
+                title.setText("第三排序");
+                des.setText("你平常會因為何者原因哭泣");
+                break;
+            case 3:
+                title.setText("第四排序");
+                des.setText("你不常為了何者原因哭泣");
+                break;
+            case 4:
+                title.setText("第五排序");
+                des.setText("你最不常因為何者原因哭泣");
+                break;
         }
-
 
         ListView listview = findViewById(R.id.ans_list);
 
@@ -47,8 +60,10 @@ public class FirstQuestion extends AppCompatActivity {
                 Intent intent = new Intent(FirstQuestion.this, FirstAnswer.class);
                 intent.putExtra("choice", i);
                 intent.putExtra("layer", layer_index++);
-//                intent.putExtra("leaveType", ansType.toArray(new String[0]));
+                if(layer_index == 5)
+                    layer_index = 0;
 
+//                intent.putExtra("leaveType", ansType.toArray(new String[0]));
                 startActivity(intent);
             }
         };

@@ -10,7 +10,6 @@
         android:id="@+id/first_Ques"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="第一題"
         android:textSize="40dp" />
 
     <TextView
@@ -18,7 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/first_Ques"
-        android:text="@string/which"
         android:textSize="30dp" />
 
     <ListView
@@ -26,5 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/first_Ques_Des"
-        android:entries="@array/options" />
+        android:entries="@array/options"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+
 </RelativeLayout>
